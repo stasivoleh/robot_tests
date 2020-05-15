@@ -1,11 +1,11 @@
 *** Variables ***
 ${RESOURCE}      tenders   # possible values: tenders, auctions
-${API_HOST_URL}  https://lb-api-staging.prozorro.gov.ua
-${API_VERSION}   2.4
+${API_HOST_URL}  http://api.oppq.office.quintagroup.com
+${API_VERSION}   2.5
 ${BROKER}        Quinta
-${DS_HOST_URL}   https://upload-docs-staging.prozorro.gov.ua
+${DS_HOST_URL}   http://ds.oppq.office.quintagroup.com
 ${ROLE}          viewer
-${EDR_HOST_URL}  https://lb-edr-staging.prozorro.gov.ua
+${EDR_HOST_URL}  https://lb.oppq.office.quintagroup.com
 ${EDR_VERSION}   0
 
 ${DASU_RESOURCE}      monitorings
