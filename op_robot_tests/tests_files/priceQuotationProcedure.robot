@@ -331,3 +331,13 @@ ${PROFILE}          ${True}
   ...      unsuccessfully_tender_verification_wrong_profile  level1
   ...      critical
   Дочекатися припинення процесу  ${viewer}  ${TENDER['TENDER_UAID']}
+
+
+Відображення статусу завершення, якщо не було подано жодних пропозицій
+  [Tags]   ${USERS.users['${viewer}'].broker}: Завершення тендера
+  ...      viewer  tender_owner  provider  provider1
+  ...      ${USERS.users['${viewer}'].broker}  ${USERS.users['${tender_owner}'].broker}
+  ...      ${USERS.users['${provider}'].broker}  ${USERS.users['${provider1}'].broker}
+  ...      unsuccefully_tender_without_bids  level1
+  ...      critical
+  Дочекатись зміни статусу unsuccessful  ${viewer}  ${TENDER['TENDER_UAID']}
